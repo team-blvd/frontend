@@ -1,10 +1,11 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, ScrollView, View, Text, StatusBar } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
+import { RecoilRoot } from 'recoil';
 
 const App: React.FC = () => {
 	return (
-		<>
+		<RecoilRoot>
 			<StatusBar barStyle="dark-content" />
 			<SafeAreaView>
 				<ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
@@ -18,7 +19,7 @@ const App: React.FC = () => {
 					</View>
 				</ScrollView>
 			</SafeAreaView>
-		</>
+		</RecoilRoot>
 	);
 };
 

@@ -25,16 +25,7 @@ module.exports = {
 	rules: {
 		'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
 		'no-use-before-define': [0],
-		'import/extensions': [
-			'error',
-			'ignorePackages',
-			{
-				js: 'never',
-				jsx: 'never',
-				ts: 'never',
-				tsx: 'never',
-			},
-		],
+		'import/extensions': 0,
 		'import/no-unresolved': 0,
 	},
 	settings: {
